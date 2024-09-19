@@ -33,6 +33,7 @@ class ResultView extends StatelessWidget {
         title: const Text(
           'Result',
         ),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Center(
@@ -41,20 +42,20 @@ class ResultView extends StatelessWidget {
             children: [
               Text(
                 'Gender: ${isMale ? 'Male' : 'Female'}',
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               ),
               Text(
                 'Result: ${result.toStringAsFixed(1)}',
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               ),
               Text(
                 'Healthiness: $resultPhrase',
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
                 textAlign: TextAlign.center,
               ),
               Text(
                 'Age: $age',
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               ),
             ],
           ),
